@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root { font-family: 'DM Sans', Arial, sans-serif; color: #1f3325; background: #f4f4ed; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+main { min-height: 100vh; padding: 0 6vw; background: radial-gradient(circle at 7% 16%, #dbe9d3 0, transparent 22rem), #f4f4ed; }
+.site-header { height: 86px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #d2d9ca; }
+.brand { color: #173e2a; text-decoration: none; font-weight: 700; letter-spacing: -.03em; font-size: 1.08rem; }
+.header-note, .eyebrow, footer { font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .075em; font-size: .66rem; color: #607464; }
+.hero { max-width: 1190px; min-height: calc(100vh - 150px); margin: 0 auto; padding: 9.5vh 0 7vh; display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(3rem, 9vw, 10rem); }
+.eyebrow { margin: 0 0 1.1rem; color: #527054; font-weight: 500; }
+h1, h2, p { margin-top: 0; }
+h1, h2 { color: #193f2b; letter-spacing: -.055em; }
+h1 { max-width: 600px; margin-bottom: 1.35rem; font: 700 clamp(3rem, 5.1vw, 5.15rem)/.98 'Playfair Display', Georgia, serif; }
+.lead { max-width: 510px; font-size: 1.08rem; line-height: 1.7; color: #4c6252; }
+.guidance-points { margin-top: 3.6rem; display: grid; gap: .7rem; }
+.guidance-points div { display: flex; align-items: center; gap: 1rem; }
+.guidance-points span { font: .68rem 'DM Mono', monospace; color: #668369; border: 1px solid #b9cbb8; width: 2rem; height: 2rem; display: grid; place-items: center; border-radius: 50%; }
+.guidance-points p { margin: 0; color: #385340; font-size: .9rem; }
+.form-card, .result-card { background: #fffef9; border: 1px solid #d8dfd1; box-shadow: 0 18px 50px rgba(32, 59, 40, .08); }
+.form-card { padding: clamp(1.7rem, 4vw, 3rem); }
+.form-heading { margin-bottom: 2rem; }
+.form-heading h2, .result-heading h2 { font: 600 2rem/1.1 'Playfair Display', Georgia, serif; margin-bottom: .55rem; }
+.form-heading > p:last-child { margin-bottom: 0; color: #6a796d; font-size: .88rem; }
+form { display: grid; gap: 1.2rem; }
+.field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+label { color: #36513d; display: grid; gap: .48rem; font-size: .83rem; font-weight: 600; }
+label em { color: #997147; font-style: normal; } label span { color: #809083; font-weight: 400; margin-left: .3rem; }
+input, textarea { width: 100%; background: #fbfbf6; border: 1px solid #ced9c9; border-radius: 2px; color: #213926; padding: .86rem .9rem; font: .95rem 'DM Sans', sans-serif; outline: none; resize: vertical; }
+input::placeholder, textarea::placeholder { color: #98a69a; } input:focus, textarea:focus { border-color: #537a5a; box-shadow: 0 0 0 3px #e4eee0; }
+[aria-invalid='true'] { border-color: #ad665b; } small, .request-error { font-size: .77rem; color: #a5534a; margin: -.1rem 0 0; }
+button { cursor: pointer; color: #fff; background: #214b31; border: 0; padding: 1rem 1.2rem; font: 600 .88rem 'DM Sans', sans-serif; margin-top: .35rem; transition: background .2s, transform .2s; }
+button:hover:not(:disabled) { background: #173d27; transform: translateY(-1px); } button:disabled { cursor: wait; opacity: .72; }
+.result-card { max-width: 800px; margin: -2rem auto 5rem; padding: clamp(1.7rem, 4vw, 3rem); }
+.result-heading { border-bottom: 1px solid #e0e5da; margin-bottom: 1.4rem; }.result-copy { color: #46604b; line-height: 1.7; }.result-copy p { margin-bottom: .7rem; }.result-copy strong { color: #234c30; }.disclaimer { color: #7d897b; border-top: 1px solid #e0e5da; padding-top: 1.1rem; margin: 1.6rem 0 0; font-size: .8rem; }
+footer { border-top: 1px solid #d2d9ca; padding: 1.8rem 0; text-align: center; }
+@media (max-width: 780px) { main { padding: 0 5vw; }.site-header { height: 70px; }.header-note { display: none; }.hero { display: block; padding: 4.5rem 0; }.intro { margin-bottom: 3.5rem; }.field-grid { grid-template-columns: 1fr; gap: 1.2rem; } h1 { font-size: clamp(3rem, 14vw, 4.6rem); }.result-card { margin-top: -1rem; } }
